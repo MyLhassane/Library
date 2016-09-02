@@ -10,6 +10,7 @@ import android.os.Parcelable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // MainActivity.java > Support Toolbar & Add Title And Icon
+        Toolbar my_toolbar = (Toolbar)findViewById(R.id.my_toolbar);
+        setSupportActionBar(my_toolbar);
+        getSupportActionBar().setTitle(R.string.app_name);
+        getSupportActionBar().setIcon(R.drawable.ic_toolbar);
 
         ListView list = (ListView) findViewById(R.id.listView);
         String [] AndroidBooksTitle = getResources().getStringArray(R.array.AndroidBooksTitle);
