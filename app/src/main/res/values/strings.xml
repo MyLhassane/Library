@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="lastAdd">Last Books</string>
+    <string name="book_title">Book Title</string>
+    <string name="author">Author </string>
+    <string name="by">By: </string>
+    <string name="purchase">Purchase</string>
+    <string-array name="AndroidBooksTitle">
+        <item>Hello, Android: Introducing Google’s Mobile Development Platform</item>
+        <item>Sams Teach Yourself Android Application Development in 24 Hours</item>
+        <item>Android Development for Dummies</item>
+        <item>Beginning Android</item>
+        <item>The Busy Coder’s Guide to Advanced Android Development</item>
+    </string-array>
+    <string-array name="AndroidBooksAuthor">
+        <item>Ed Burnette</item>
+        <item>Shane Conder</item>
+        <item>Donn Felker</item>
+        <item>Ed Burnette</item>
+        <item>Mark Lawrence Murphy</item>
+    </string-array>
+    <string-array name="AndroidBooksImage">
+        <item>@drawable/android_1</item>
+        <item>@drawable/android_2</item>
+        <item>@drawable/android_3</item>
+        <item>@drawable/android_4</item>
+        <item>@drawable/android_5</item>
+    </string-array>
+</resources>
