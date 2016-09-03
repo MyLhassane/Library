@@ -41,12 +41,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // MainActivity.java > Support Toolbar & Add Title And Icon
+        // Support Toolbar Whit Search & Menu
         Toolbar my_toolbar = (Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
-        getSupportActionBar().setTitle(R.string.app_name);
-        getSupportActionBar().setIcon(R.drawable.ic_toolbar);
+        getSupportActionBar().setTitle(R.string.app_name); // Remove_
+        getSupportActionBar().setIcon(R.drawable.ic_toolbar); // Remove_
+        // Add_Menu In Right
+        // Add_Search In Left
 
+        //
         ListView list = (ListView) findViewById(R.id.listView);
         String [] AndroidBooksTitle = getResources().getStringArray(R.array.AndroidBooksTitle);
         String [] AndroidBooksAuthor = getResources().getStringArray(R.array.AndroidBooksAuthor);
