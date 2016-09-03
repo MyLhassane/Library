@@ -44,12 +44,12 @@ public class MainActivity extends AppCompatActivity {
         // Support Toolbar Whit Search & Menu
         Toolbar my_toolbar = (Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
-        getSupportActionBar().setTitle(R.string.app_name); // Remove_
-        getSupportActionBar().setIcon(R.drawable.ic_toolbar); // Remove_
+        // getSupportActionBar().setTitle(R.string.app_name); // Remove_
+        // getSupportActionBar().setIcon(R.drawable.ic_toolbar); // Remove_
         // Add_Menu In Right
         // Add_Search In Left
 
-        //
+        // Define ListView from ID into Variable
         ListView list = (ListView) findViewById(R.id.listView);
         String [] AndroidBooksTitle = getResources().getStringArray(R.array.AndroidBooksTitle);
         String [] AndroidBooksAuthor = getResources().getStringArray(R.array.AndroidBooksAuthor);
