@@ -55,25 +55,26 @@ public class MainActivity extends AppCompatActivity {
         String [] AndroidBooksAuthor = getResources().getStringArray(R.array.AndroidBooksAuthor);
         ArrayList<listitem> listBook = new ArrayList<listitem>();
 
+        // View All In ListView
         for (int i = 0; i < AndroidBooksTitle.length || i < AndroidBooksAuthor.length; i++){
             listBook.add(new listitem(i,androidBooksImg[i],AndroidBooksTitle[i],AndroidBooksAuthor[i]));
         }
 
+        // جسر بين ListView والبيانات التي تأتي من list
         ListAdapter ad = new ListAdapter(listBook);
         list.setAdapter(ad);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TextView title = (TextView)view.findViewById(R.id.Book_Title);
                 TextView author = (TextView)view.findViewById(R.id.Author);
-                ImageView imageView = (ImageView)findViewById(R.id.Book_Image);
+//                ImageView imageView = (ImageView)findViewById(R.id.Book_Image);
 //                Toast.makeText(MainActivity.this, title.getText() , Toast.LENGTH_SHORT).show();
-                imgs = getResources().obtainTypedArray(R.array.AndroidBooksImage);
+//                imgs = getResources().obtainTypedArray(R.array.AndroidBooksImage);
 
-                
                 Intent intent = new Intent(MainActivity.this,SingleBook.class);
-
 
 //                imageView.buildDrawingCache();
 //                Bitmap image= imageView.getDrawingCache();
@@ -81,17 +82,13 @@ public class MainActivity extends AppCompatActivity {
 //                Bundle extras = new Bundle();
 //                extras.putParcelable("imagebitmap", image);
 
-
                 intent.putExtra("titleBook",title.getText());
                 intent.putExtra("Author",author.getText());
                 startActivity(intent);
             }
         });
 
-
-
     }
-
 
     class ListAdapter extends BaseAdapter{
 
