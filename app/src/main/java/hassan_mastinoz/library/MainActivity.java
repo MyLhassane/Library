@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             listBook.add(new listitem(i,androidBooksImg[i],AndroidBooksTitle[i],AndroidBooksAuthor[i]));
         }
 
-        // جسر بين ListView والبيانات التي تأتي من list
+        // جسر بين ListView والبيانات التي تأتي من list x
         ListAdapter ad = new ListAdapter(listBook);
         list.setAdapter(ad);
 
