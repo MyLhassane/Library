@@ -46,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(my_toolbar);
         getSupportActionBar().setTitle(R.string.app_name); // Remove_
         getSupportActionBar().setIcon(R.drawable.ic_toolbar); // Remove_
+
         // Add_Menu In Right
+
+
         // Add_Search In Left
 
         //
