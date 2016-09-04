@@ -5,6 +5,7 @@
     <string name="author">Author </string>
     <string name="by">By: </string>
     <string name="purchase">Purchase</string>
+    <string name="search">Search</string>
     <string-array name="AndroidBooksTitle">
         <item>Hello, Android: Introducing Google’s Mobile Development Platform</item>
         <item>Sams Teach Yourself Android Application Development in 24 Hours</item>
